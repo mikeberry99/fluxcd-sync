@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: demo-config
+data:
+  data_1: "The first data"
+  data_2: "1"
+  log_level: "verbose"
