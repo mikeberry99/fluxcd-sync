@@ -3,4 +3,4 @@ kind: Kustomization
 resources:
 - namespace.yaml
 - simple-configmap.yaml
-- sync-folder/pkg/crossplane/io/v1/provider-gcp-storage.yaml
+- pkg/crossplane/io/v1/provider-gcp-storage.yaml
