@@ -4,6 +4,6 @@ resources:
 - namespace.yaml
 - simple-configmap.yaml
 - pkg/crossplane/io/v1/provider-gcp-storage.yaml
-- pkg/crossplane/io/v1/deployment-runtime-config.yaml
+- pkg/crossplane/io/v1/controller-config.yaml
 - tenant/provider-config.yaml
 - tenant/bucket.yaml
