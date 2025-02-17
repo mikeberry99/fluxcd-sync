@@ -11,7 +11,7 @@ spec:
         iam.gke.io/gcp-service-account: unprivileged@,.project.iam.gserviceaccount.com 
     spec:
       selector:
-        matchLables:
+        matchLabels:
           pkg.crossplane.io/provider: provider-gcp-storage
       template:
         metadata:
