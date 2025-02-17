@@ -1,0 +1,29 @@
+apiVersion: pkg.crossplane.io/v1beta
+kind: DeploymentRuntimeConfig
+metadata:
+  name: storage-provider-runtime-config
+spec:
+  deploymentTemplate:
+    metadata:
+      labels:
+        app.kubernetes.io/name: storage-provider-runtime-config
+      annotations:
+        iam.gke.io/gcp-service-account: unprivileged@,.project.iam.gserviceaccount.com 
+    spec:
+      selector:
+        matchLables:
+          pkg.crossplane.io/provider: provider-gcp-storage
+      template:
+        metadata:
+          labels:
+            pkg.crossplane.io/provider: provider-gcp-storage
+          annotations: 
+            iam.gke.io/gcp-service-account: unprivileged@,.project.iam.gserviceaccount.com 
+        spec:
+          containers:
+            - name: provider-gcp-storage
+  serviceAccountTemplate:
+    metadata:
+      name: crossplane-svc-gcp-storage
+      annotations: 
+        iam.gke.io/gcp-service-account: unprivileged@,.project.iam.gserviceaccount.com
