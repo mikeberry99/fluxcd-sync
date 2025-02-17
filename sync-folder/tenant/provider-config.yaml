@@ -5,6 +5,6 @@ metadata:
 spec:
   credentials:
     source: ImpersonateServiceAccount
-    ImpersonateServiceAccount:
+    impersonateServiceAccount:
       name: crossplane-svc@mike-berry-sandbox.iam.gserviceaccount.com
   projectID: mike-berry-sandbox
