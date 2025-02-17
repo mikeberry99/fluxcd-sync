@@ -1,4 +1,4 @@
-apiVersion: pkg.crossplane.io/v1beta
+apiVersion: pkg.crossplane.io/v1beta1
 kind: DeploymentRuntimeConfig
 metadata:
   name: storage-provider-runtime-config
