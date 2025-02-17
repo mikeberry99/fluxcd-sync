@@ -1,0 +1,10 @@
+apiVersion: gcp.upbound.io/beta1
+kind: ProviderConfig
+metadata:
+  name: storage-provider-config
+spec:
+  credentials:
+    source: ImpersonateServiceAccount
+    ImpersonateServiceAccount:
+      name: crossplane-svc@mike-berry-sandbox.iam.gserviceaccount.com
+  projectID: mike-berry-sandbox

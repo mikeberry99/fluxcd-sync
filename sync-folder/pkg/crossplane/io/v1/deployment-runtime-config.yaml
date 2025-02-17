@@ -24,6 +24,6 @@ spec:
             - name: provider-gcp-storage
   serviceAccountTemplate:
     metadata:
-      name: crossplane-svc-gcp-storage
+      name: provider-gcp-storage
       annotations: 
         iam.gke.io/gcp-service-account: cp-unprivileged@mike-berry-sandbox.iam.gserviceaccount.com
