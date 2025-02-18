@@ -1,6 +1,4 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-- pkg/crossplane/io/v1/provider-gcp-storage.yaml
-- pkg/crossplane/io/v1/deployment-runtime-config.yaml
-- tenant/provider-config.yaml
+- simple-configmap.yaml
