@@ -4,3 +4,7 @@ metadata:
   name: provider-gcp-storage
 spec:
   package: xpkg.upbound.io/upbound/provider-gcp-storage:v1
+  runtimeConfigRef:
+    apiVersion: pkg.crossplane.io/v1beta1
+    kind: DeploymentRuntimeConfig
+    name: storage-provider-runtime-config
