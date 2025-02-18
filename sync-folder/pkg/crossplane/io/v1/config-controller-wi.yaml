@@ -1,0 +1,11 @@
+apiVersion: pkg.crossplane.io/v1alpha1
+kind: ControllerConfig
+metadata:
+  name: mike-test-controller-config
+  annotations:    
+    iam.gke.io/gcp-service-account: crossplane-svc@mike-berry-sandbox.iam.gserviceaccount.com
+spec:
+  serviceAccountName: cp-gcp-sa
+
+
+

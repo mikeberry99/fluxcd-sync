@@ -1,0 +1,8 @@
+apiVersion: gcp.upbound.io/v1beta1
+kind: ProviderConfig
+metadata:
+  name: wi-config
+spec:
+  projectID: mike-berry-sandbox
+  credentials:
+    source: InjectedIdentity
