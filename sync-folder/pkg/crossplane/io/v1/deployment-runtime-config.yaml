@@ -21,7 +21,7 @@ spec:
             iam.gke.io/gcp-service-account: cp-unprivileged@mike-berry-sandbox.iam.gserviceaccount.com
         spec:
           containers:
-            - name: provider-gcp-storage
+          - name: provider-gcp-storage
   serviceAccountTemplate:
     metadata:
       name: provider-gcp-storage
