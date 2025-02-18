@@ -6,5 +6,5 @@ spec:
   credentials:
     source: ImpersonateServiceAccount
     impersonateServiceAccount:
-      name: crossplane-svc@mike-berry-sandbox.iam.gserviceaccount.com
-  projectID: mike-berry-sandbox
+      name: cp-storage@<project>.iam.gserviceaccount.com
+  projectID: <project>

@@ -8,7 +8,7 @@ spec:
       labels:
         app.kubernetes.io/name: storage-provider-runtime-config
       annotations:
-        iam.gke.io/gcp-service-account: cp-unprivileged@mike-berry-sandbox.iam.gserviceaccount.com
+        iam.gke.io/gcp-service-account: cp-unprivileged@<project>.iam.gserviceaccount.com
     spec:
       selector:
         matchLabels:
@@ -18,7 +18,7 @@ spec:
           labels:
             pkg.crossplane.io/provider: provider-gcp-storage
           annotations: 
-            iam.gke.io/gcp-service-account: cp-unprivileged@mike-berry-sandbox.iam.gserviceaccount.com
+            iam.gke.io/gcp-service-account: cp-unprivileged@<project>.iam.gserviceaccount.com
         spec:
           containers:
           - name: package-runtime
@@ -26,4 +26,4 @@ spec:
     metadata:
       name: provider-gcp-storage
       annotations: 
-        iam.gke.io/gcp-service-account: cp-unprivileged@mike-berry-sandbox.iam.gserviceaccount.com
+        iam.gke.io/gcp-service-account: cp-unprivileged@<project>.iam.gserviceaccount.com
